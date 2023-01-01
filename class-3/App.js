@@ -40,10 +40,32 @@ const heading3 = <h1 id="title" key="h3">Namaste JS</h1>;
 const container = React.createElement("div", {
     id: "container",
     namaste: "reactjs"
-}, [heading1,heading2, heading38]);
+}, [heading1,heading2, heading3]);
+
+const Title = () => (
+    <h1 id="title" key="1">Namaste title</h1>
+);
+
+const xyz = true;
+const  HeaderComponent = () => {
+    return (
+        <div>
+            {container}
+            {console.log("Hello")}
+            {navigator.userAgent}
+            {Title()}               Component Composition
+            {<Title></Title>}
+            {<Title/>}
+            <h1>Namaste React Functional Component</h1>
+            <h2>This is a h2 tag</h2>
+        </div>
+    );
+};
+
 
 // passing 
 const root = ReactDOM.createRoot(document.getElementById("app"));
 
 //async differ
-root.render(container);
+// root.render(container);
+root.render(<HeaderComponent />);
