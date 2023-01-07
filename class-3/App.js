@@ -35,7 +35,7 @@ const heading2 = React.createElement("h2",
     }, 
     "Namaste React JS!");
 
-const heading3 = <h1 id="title" key="h3">Namaste JS</h1>;
+const heading3 = <h1 id="title" key="h3" className="root">Namaste JS</h1>;
 
 const container = React.createElement("div", {
     id: "container",
@@ -61,6 +61,8 @@ const  HeaderComponent = () => {
         </div>
     );
 };
+
+console.log("Test");
 
 
 // passing 
