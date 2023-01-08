@@ -1,0 +1,55 @@
+#app {
+    /* width: 90vh; */
+    height: 90vh;
+    margin: 0 auto;
+    /* border: 1px solid #777; */
+    border-radius: 3%;
+}
+
+.nav, .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav > ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.nav > ul > li {
+    padding: 10px 10px;
+    margin: 5px 20px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.card {
+    margin: 5px 5px 5px 0px;
+    padding: 5px;
+    border: 1px solid black;
+    width: fit-content;
+    width: 233px;
+    max-width: 250px;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    
+}
