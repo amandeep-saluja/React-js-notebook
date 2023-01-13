@@ -1,5 +1,12 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #app {
-    /* width: 90vh; */
+    max-width: 1080px;
+    width: 90vw;
     height: 90vh;
     margin: 0 auto;
     /* border: 1px solid #777; */
@@ -10,9 +17,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid black;
     font-size: 25px;
     font-weight: bold;
+    background-color: black;
+    color: white;
 }
 
 .nav > ul {
@@ -30,15 +38,23 @@
 
 .logo {
     height: 120px;
+    display: flex;
 }
 
 .card {
     margin: 5px 5px 5px 0px;
     padding: 5px;
-    border: 1px solid black;
     width: fit-content;
     width: 233px;
     max-width: 250px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-radius: 2%;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .5s cubic-bezier(.215,.61,.355,1);
 }
 
 .card-image {
@@ -48,8 +64,23 @@
 .restaurant-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .search-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.search-input {
+    border-radius: 25px;
+    outline: none;
+    padding: 5px;
+    height: 50px;
+    width: 25%;
+}
+
+.search-btn {
     
 }
