@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <nav className="nav">
-        {Title()}
+        {/* {Title()} */}
         <Title />
         <ul>
           <li>Home</li>

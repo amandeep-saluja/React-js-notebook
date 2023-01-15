@@ -1,0 +1,38 @@
+State variable or React hook
+
+	react creates Virtual dom and to know react that something will change on an event, we attach a hook between data and virtual dom's element.
+	So whenever there is an event triggered, react re-render that part of virtual dom or sub-tree that has used state variable...
+	
+	React Fiber -> new reconciliation algorithm
+
+	while reconciliation react used diff algorithm to check difference between the virtual DOM's previous state and current state.
+
+	React only watch it's state variables and re-render it in virtual dom.
+	
+useEffect is a react hook that calls when component is rendered.
+	
+useEffect callback function takes a call back funtion & dependency array...
+and call it at a specific time.
+
+after every rerender useEffect gets called and hence it's callback will be called
+
+useEffect calls when:
+	
+	-> empty dependency array -> once after first render
+	-> dep arrat [searchTxt] => once after initial render + everytime after render ( my searchTxt changes)
+	-> if we don't pass any dependency -> it will be called after every render.
+	
+Never create any component inside component.
+Never ever write a useState() inside if else. -> react wont like inconsistency. -> react won;t know if searchTxt variable will be there or not.
+Never write a useState inside for loop.
+
+
+react gives you useState to create local variable inside your component.
+Never create a useState react variable outside component
+
+Formik -> npm package used to create forms.
+
+-------------------------------------------------------------------------------
+
+createBrowserRouter -> function to create routers in our project.
+
