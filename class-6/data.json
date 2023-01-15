@@ -1,0 +1,1885 @@
+{
+  "cards": [
+    {
+      "data": {
+        "address": "6/4/7, Kokane Chowk, Rahatni, Pimple Saudagar",
+        "adTrackingID": "cid=5669843~p=1~eid=00000185-8b0c-38b8-0e4f-71c7006c0112",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Rahatani",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.1",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "y2hukcrkdh4p4v6djdff",
+        "costForTwo": 40000,
+        "costForTwoString": "\u20b9400 FOR TWO",
+        "cuisines": ["Biryani", "Mughlai", "North Indian", "Chinese"],
+        "deliveryTime": 22,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "2192",
+        "lastMileTravel": 2.59999990463257,
+        "lastMileTravelString": "2.5 kms",
+        "locality": "Kokane Chowk",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 22,
+        "minDeliveryTime": 22,
+        "name": "Aroma's Hyderabad House",
+        "new": false,
+        "parentId": 71,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 22,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 2.59999990463257,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 22,
+          "minDeliveryTime": 22,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "2192",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "22 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "aromas-hyderabad-house-pimple-saudagar"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "b3a6eb3f-3b81-4c05-9bca-cb490e2695b9",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Sr no 10/A, Near Tapovan Temple , Behind Bhavani Super Market , Station Road Pimpri Pune -411017 , PUNE PCMC ward No-71, Pune, Maharashtra-411017",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "50% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Colony",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.1",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "oxhdcivy3f5mcqspbihx",
+        "costForTwo": 15000,
+        "costForTwoString": "\u20b9150 FOR TWO",
+        "cuisines": ["Home Food"],
+        "deliveryTime": 15,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "223519",
+        "lastMileTravel": 0.400000005960464,
+        "lastMileTravelString": "0.4 kms",
+        "locality": "PCMC",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 15,
+        "minDeliveryTime": 15,
+        "name": "Homely Meals @69",
+        "new": false,
+        "parentId": 22159,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 15,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.400000005960464,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 15,
+          "minDeliveryTime": 15,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "223519",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "15 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "homely-meals-@69-pcmc-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "85f47cef-615f-4af7-9ac1-1605c5442035",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Shop 1b, Ground Floor, Rainbow Plaza, Pinple Saudagar,Pune 411027",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "60% off up to \u20b9120 | Use code STEALDEAL",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "60% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "60% off | Use STEALDEAL",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "60% off up to \u20b9120 | Use code STEALDEAL",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "60% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use STEALDEAL",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Rahatani",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.2",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "zpejfwmrqauw3monbrev",
+        "costForTwo": 35000,
+        "costForTwoString": "\u20b9350 FOR TWO",
+        "cuisines": ["Burgers", "American"],
+        "deliveryTime": 29,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "233324",
+        "lastMileTravel": 2.79999995231628,
+        "lastMileTravelString": "2.7 kms",
+        "locality": "Pinple Saudagar",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 29,
+        "minDeliveryTime": 29,
+        "name": "Burger King",
+        "new": false,
+        "parentId": 166,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 29,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 2.79999995231628,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 29,
+          "minDeliveryTime": 29,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "233324",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "29 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "burger-king-pinple-saudagar-pimple-saudagar"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "e76060af-19a7-409b-9e74-8b77353c7ff8",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Hardcastle Restaurants Pvt Ltd, McDonalds Family Restaurants Pvt Ltd, Premier Plaza, Mumbai- Pune Road, Chinchwad. Pune- 411019",
+        "adTrackingID": "cid=5700106~p=4~eid=00000185-8b0c-38b8-0e4f-71c8006c0409",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "10% off up to \u20b940 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "10% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "10% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "10% off up to \u20b940 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "10% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Chinchwad",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.3",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "7bb739d7f6ae8b4ce8ed590765dffd2f",
+        "costForTwo": 40000,
+        "costForTwoString": "\u20b9400 FOR TWO",
+        "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
+        "deliveryTime": 23,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "33859",
+        "lastMileTravel": 4,
+        "lastMileTravelString": "4 kms",
+        "locality": "Premier Plaza",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 23,
+        "minDeliveryTime": 23,
+        "name": "McDonald's",
+        "new": false,
+        "parentId": 630,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 23,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 4,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 23,
+          "minDeliveryTime": 23,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "33859",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "23 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "mcdonalds-premier-plaza-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "2f37aa45-40dd-485f-9ecb-d1d2896b6ea4",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "NEAR ASHOK TALKIES RADHASWAMI ROAD NARAYANPROVI PIMPRI PUNE - 411017",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Colony",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.2",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "vxngr4cqc43t08yqqkqj",
+        "costForTwo": 20000,
+        "costForTwoString": "\u20b9200 FOR TWO",
+        "cuisines": ["Indian"],
+        "deliveryTime": 19,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "346909",
+        "lastMileTravel": 0.400000005960464,
+        "lastMileTravelString": "0.4 kms",
+        "locality": "PCMC",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 19,
+        "minDeliveryTime": 19,
+        "name": "THE MOMO PANDA",
+        "new": false,
+        "parentId": 7561,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 19,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.400000005960464,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 19,
+          "minDeliveryTime": 19,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "346909",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "19 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "the-momo-panda-pcmc-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 50,
+        "totalRatingsString": "50+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "ea8eb381-3602-466d-908d-f5c3b9c7cf9d",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Sinhasan Bungalow , Swami samarth colony , opp Varsha medical lane , Near rahatni phata",
+        "adTrackingID": "cid=5662630~p=7~eid=00000185-8b0c-38b8-0e4f-71c9006c0709",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "50% off up to \u20b9100 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "50% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "50% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "50% off up to \u20b9100 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "50% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimple Saudagar",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.3",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "qcfud0w92egctceailzz",
+        "costForTwo": 25000,
+        "costForTwoString": "\u20b9250 FOR TWO",
+        "cuisines": [
+          "Chinese",
+          "Asian",
+          "Beverages",
+          "Desserts",
+          "Snacks",
+          "Rs.40 Off"
+        ],
+        "deliveryTime": 32,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "167184",
+        "lastMileTravel": 3.79999995231628,
+        "lastMileTravelString": "3.7 kms",
+        "locality": "Swami samarth colony",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 32,
+        "minDeliveryTime": 32,
+        "name": "The Chinese Factory",
+        "new": false,
+        "parentId": 11720,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 32,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 3.79999995231628,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 32,
+          "minDeliveryTime": 32,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "167184",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "32 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "the-chinese-factory-pimple-saudagar"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "c7ff7eb1-73d2-458d-8f3b-ef6518c16856",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "PCMC Link Rd, Shastri Nagar, Pimpri Colony, Pimpri-Chinchwad, Maharashtra 411017",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Colony",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "3.4",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "lwmu3phqvie6jr2wkg5l",
+        "costForTwo": 25000,
+        "costForTwoString": "\u20b9250 FOR TWO",
+        "cuisines": ["Fast Food", "Italian", "Pizzas", "Beverages"],
+        "deliveryTime": 22,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "91056",
+        "lastMileTravel": 0.5,
+        "lastMileTravelString": "0.5 kms",
+        "locality": "Pimpri chinchwad",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 22,
+        "minDeliveryTime": 22,
+        "name": "KNS",
+        "new": false,
+        "parentId": 10060,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 22,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.5,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 22,
+          "minDeliveryTime": 22,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "91056",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "22 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "kns-pizza-pimpri-chinchwad-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 50,
+        "totalRatingsString": "50+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "6a73caba-09bc-4b9e-9fe0-8a2d2ada7f8c",
+        "veg": true
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "11/1/1, Kudale Plaza, Pimpri, Pune",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Colony",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.4",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "fqjtxqnkxx9eas3rl6kz",
+        "costForTwo": 45000,
+        "costForTwoString": "\u20b9450 FOR TWO",
+        "cuisines": ["North Indian", "Chinese", "South Indian"],
+        "deliveryTime": 19,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "56891",
+        "lastMileTravel": 0.5,
+        "lastMileTravelString": "0.5 kms",
+        "locality": "Pimpri",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 19,
+        "minDeliveryTime": 19,
+        "name": "Shree Ganesh Restaurant Pure Veg",
+        "new": false,
+        "parentId": 184573,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 19,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.5,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 19,
+          "minDeliveryTime": 19,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "56891",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "19 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "shree-ganesh-pure-veg-pimpri-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 100,
+        "totalRatingsString": "100+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "51f0521c-5ea8-46e7-a146-cbf2db342d24",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Unit No C -14, Second Floor, CTS No.4270, S.NO.177, Elpro City Square Mall, PCMC Link Road, Chinchwad, Pune - 411033, , PUNE PCMC ward No-37, Pune Maharashtra -411033",
+        "adTrackingID": "cid=5668072~p=10~eid=00000185-8b0c-38b8-0e4f-71ca006c0a1a",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Chinchwad",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.1",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "938a380d78eb75cd11cf2fccc989ec4d",
+        "costForTwo": 30000,
+        "costForTwoString": "\u20b9300 FOR TWO",
+        "cuisines": ["Mexican"],
+        "deliveryTime": 31,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "240443",
+        "lastMileTravel": 3,
+        "lastMileTravelString": "3 kms",
+        "locality": "Elpro City Square Mall",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 31,
+        "minDeliveryTime": 31,
+        "name": "Taco Bell",
+        "new": false,
+        "parentId": 1557,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 31,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 3,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 31,
+          "minDeliveryTime": 31,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "240443",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "31 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "taco-bell-elpro-city-square-mall-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 500,
+        "totalRatingsString": "500+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "7f1b0d1e-adcb-4b71-afcb-40eafe4ee1b3",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Sr no 04 OPP Globmed Medical Pimpri Gaon PCMC Pune 411017",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "15% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "15% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "15% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "15% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Gaon",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "3.2",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "kfu9b6vc5axobhjiu7ih",
+        "costForTwo": 20000,
+        "costForTwoString": "\u20b9200 FOR TWO",
+        "cuisines": ["Mughlai", "North Indian"],
+        "deliveryTime": 24,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "224351",
+        "lastMileTravel": 0.400000005960464,
+        "lastMileTravelString": "0.4 kms",
+        "locality": "Pimple Saudagar",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 24,
+        "minDeliveryTime": 24,
+        "name": "Karachi Kitchen",
+        "new": false,
+        "parentId": 114944,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 24,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.400000005960464,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 24,
+          "minDeliveryTime": 24,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "224351",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "24 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "karachi-kitchen-pcmc-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 20,
+        "totalRatingsString": "20+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "778e0640-be3a-4ccc-8997-b2a9ec4f1793",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Sr no 10/A, Near TapovanTemple , Behind Bhavani Super Market , Station Road Pimpri Pune -411017, PUNE PCMC ward No-71, Pune, Maharashtra - 411017",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            },
+            {
+              "discountType": "Percentage",
+              "meta": "50% off on all orders",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "50% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "PCMC",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "--",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "yigxwnoos0sc5z7ka297",
+        "costForTwo": 20000,
+        "costForTwoString": "\u20b9200 FOR TWO",
+        "cuisines": ["Home Food", "Thalis", "North Indian", "Chinese"],
+        "deliveryTime": 15,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "558140",
+        "lastMileTravel": 0.400000005960464,
+        "lastMileTravelString": "0.4 kms",
+        "locality": "Bhavani Super Market",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 15,
+        "minDeliveryTime": 15,
+        "name": "Ghar ka Dabba@69",
+        "new": false,
+        "parentId": 87130,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 15,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.400000005960464,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 15,
+          "minDeliveryTime": 15,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "558140",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "15 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "ghar-ka-dabba@69-pcmc-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 0,
+        "totalRatingsString": "Too Few Ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "38e0d7dd-f16b-47a9-91de-01b28c2f4365",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Shop 1, Sai Ambience, Pimple Saudagar, Pune Opp NKGSB bank, ahead of rose icon",
+        "adTrackingID": "cid=5662209~p=13~eid=00000185-8b0c-38b8-0e4f-71cb006c0d7c",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimple Saudagar",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.3",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "glnlsc4ehygwui9easui",
+        "costForTwo": 40000,
+        "costForTwoString": "\u20b9400 FOR TWO",
+        "cuisines": [
+          "Chinese",
+          "Thai",
+          "Pan-Asian",
+          "Seafood",
+          "Desserts",
+          "Beverages"
+        ],
+        "deliveryTime": 27,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "9874",
+        "lastMileTravel": 2.59999990463257,
+        "lastMileTravelString": "2.5 kms",
+        "locality": "Near Rose Icon",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 27,
+        "minDeliveryTime": 27,
+        "name": "Kimling Rush",
+        "new": false,
+        "parentId": 1940,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 27,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 2.59999990463257,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 27,
+          "minDeliveryTime": 27,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "9874",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "27 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "kimling-rush-near-rose-icon-pimple-saudagar"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "330633e6-301e-406d-b731-4fc16889d1e6",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Shop No 27,Below Gold Gym,Govind Garden Chowk",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimple Saudagar",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.3",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "vufei61tzglv0gylddfr",
+        "costForTwo": 20000,
+        "costForTwoString": "\u20b9200 FOR TWO",
+        "cuisines": ["North Indian", "South Indian", "Tandoor"],
+        "deliveryTime": 27,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "16511",
+        "lastMileTravel": 2.29999995231628,
+        "lastMileTravelString": "2.2 kms",
+        "locality": "Below Gold'S Gym",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 27,
+        "minDeliveryTime": 27,
+        "name": "Anaya Family Restaurant (Kerala)",
+        "new": false,
+        "parentId": 33033,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 27,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 2.29999995231628,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 27,
+          "minDeliveryTime": 27,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "16511",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "27 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "anaya-pimple-saudagar-pimple-saudagar"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 1000,
+        "totalRatingsString": "1000+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "62ad0786-c8e9-464a-af72-be8d9aa14bd4",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "Cafe Chocolicious, Shop, Shastri Nagar, Pimpri Colony, Pimpri-Chinchwad, Maharashtra, India",
+        "adTrackingID": "",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "FREE DELIVERY",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "FREE DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "FREE_DELIVERY",
+              "meta": "Free Delivery",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "Pimpri Colony",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "3.1",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "fdwuvgbix2d4gesln87q",
+        "costForTwo": 20000,
+        "costForTwoString": "\u20b9200 FOR TWO",
+        "cuisines": ["Arabian", "Lebanese"],
+        "deliveryTime": 21,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "344823",
+        "lastMileTravel": 0.5,
+        "lastMileTravelString": "0.5 kms",
+        "locality": "PCMC",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 21,
+        "minDeliveryTime": 21,
+        "name": "Shawarma Delight",
+        "new": false,
+        "parentId": 182393,
+        "promoted": false,
+        "rainMode": "NONE",
+        "select": false,
+        "sla": {
+          "deliveryTime": 21,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 0.5,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 21,
+          "minDeliveryTime": 21,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "344823",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "21 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "shawarma-delight-pcmc-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 50,
+        "totalRatingsString": "50+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "c1e29d46-9340-455a-ab1f-0dbf74a03345",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    },
+    {
+      "data": {
+        "address": "SHOP NO 1&2 GROUND FLOOR C T S NO 4669PIMPRI CHINCHWAD LINK ROAD OPP BHAT NAGAR PIMPRI CAMP PIMPRI WAGHARE , PUNE PCMC ward No-68, Pune, Maharashtra-411017",
+        "adTrackingID": "cid=5670704~p=16~eid=00000185-8b0c-38b8-0e4f-71cc006c1079",
+        "aggregatedDiscountInfo": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% off",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off | Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "descriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "40% off up to \u20b980 | Use code TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "header": "40% OFF",
+          "headerType": 0,
+          "shortDescriptionList": [
+            {
+              "discountType": "Percentage",
+              "meta": "Use TRYNEW",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "superFreedel": ""
+        },
+        "area": "PCMC",
+        "availability": {
+          "nextCloseMessage": "",
+          "nextOpenMessage": "",
+          "opened": true
+        },
+        "avgRating": "4.1",
+        "badges": {
+          "imageBased": [],
+          "textBased": [],
+          "textExtendedBadges": []
+        },
+        "chain": [],
+        "city": "6",
+        "cityState": "6",
+        "cloudinaryImageId": "rvewnjnief0t5is0ejvj",
+        "costForTwo": 27000,
+        "costForTwoString": "\u20b9270 FOR TWO",
+        "cuisines": [
+          "Healthy Food",
+          "Pizzas",
+          "North Indian",
+          "Thalis",
+          "Biryani",
+          "Chinese"
+        ],
+        "deliveryTime": 20,
+        "favorite": false,
+        "feeDetails": {
+          "amount": "",
+          "fees": [],
+          "icon": "",
+          "message": "",
+          "title": "",
+          "totalFees": 0
+        },
+        "hasSurge": false,
+        "id": "538369",
+        "lastMileTravel": 1.89999997615814,
+        "lastMileTravelString": "1.8 kms",
+        "locality": "OPP BHAT NAGAR PIMPRI CAMP",
+        "longDistanceEnabled": 0,
+        "maxDeliveryTime": 20,
+        "minDeliveryTime": 20,
+        "name": "EatFit",
+        "new": false,
+        "parentId": 76139,
+        "promoted": true,
+        "rainMode": "NONE",
+        "ribbon": [
+          {
+            "type": "PROMOTED"
+          }
+        ],
+        "select": false,
+        "sla": {
+          "deliveryTime": 20,
+          "iconType": "EMPTY",
+          "lastMileDistance": 0,
+          "lastMileTravel": 1.89999997615814,
+          "longDistance": "NOT_LONG_DISTANCE",
+          "maxDeliveryTime": 20,
+          "minDeliveryTime": 20,
+          "preferentialService": false,
+          "rainMode": "NONE",
+          "restaurantId": "538369",
+          "serviceability": "SERVICEABLE"
+        },
+        "slaString": "20 MINS",
+        "slugs": {
+          "city": "pune",
+          "restaurant": "eatfit-opp-bhat-nagar-pimpri-camp-pcmc"
+        },
+        "tags": [],
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "totalRatings": 500,
+        "totalRatingsString": "500+ ratings",
+        "tradeCampaignHeaders": [],
+        "type": "F",
+        "unserviceable": false,
+        "uuid": "521de1bf-9353-4256-88c7-87432c78972c",
+        "veg": false
+      },
+      "subtype": "basic",
+      "type": "restaurant"
+    }
+  ]
+}
