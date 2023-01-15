@@ -34,5 +34,32 @@ Formik -> npm package used to create forms.
 
 -------------------------------------------------------------------------------
 
-createBrowserRouter -> function to create routers in our project.
+createBrowserRouter -> function to create routers in our project -> and pass the routing configuration
 
+createBrowserRouter-> it takes list of paths 
+
+after creating the routing configuration, it just don't work unless we provide it to our app..
+
+For this use, RouterProvider... and provide the routing configuration to it...
+
+ErrorElement -> error component
+
+Routing ->
+
+	1. Client side routing
+	2. Server side routing
+----------------------------------------------------------------------------
+Single Page Application (SPA):
+To avoid the server side routing and eliminate the server side routing we will use the client side routing....
+
+to load the components according to route dynamically we use outlet to fill in with child component.
+
+All the childrens of my component go into the outlet according to route.
+
+to use the params from routing path -> react-route-dom package provided us something known as useParams() hook.
+
+modular
+reusable
+testable
+readable
+maintainable

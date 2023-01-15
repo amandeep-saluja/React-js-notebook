@@ -45,6 +45,7 @@
 }
 
 .card {
+  color: black;
   margin: 5px 5px 5px 5px;
   padding: 5px;
   max-height: 260px;
@@ -144,4 +145,18 @@
   100% {
     -webkit-mask-position: left;
   }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.restraunt-menu {
+}
+
+.menu-items {
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
