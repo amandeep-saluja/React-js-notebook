@@ -1,3 +1,134 @@
+React is a javascript library and not a framework.
+
+React class-2:
+
+How to add react into our app:
+
+We have to import the react library in our code by several ways:
+
+1. add react js files from cdn using script tag
+2. add react files using bundler
+
+Bundlers: It is responsible for a lot of things in our app to make it production ready.
+Like:
+It makes our code:
+-> Minified
+-> Optimize code
+-> Tree shaking
+-> remove console log
+
+Some recommended Bundlers available in market:
+-> Webpack
+-> Parcel
+-> Vite
+
+Parcel is a bundler package, that is used to bundle our code and make our app production ready.
+
+Package manager: -> Package repository (NPM/yarn)
+We need NPM package manager to pull parcel package into our code.
+
+For creating package management file in our code, package.json to keep package manager configurations.
+npm init -> will create new package.json file
+
+npm install -D parcel
+
+caret vs tilde
+
+package-lock.json -> will lock the exact version of dependency
+
+Install react package using npm
+npm install -D react
+npm install -D react-dom
+
+How to ignite our app
+
+npx parcel index.html
+
+
+React class-3
+
+
+JSX
+
+Babel
+
+	React.createElement => React object => HTML(DOM)
+
+React Components:
+	Functional Components
+	Class based Components
+
+Note:
+		const heading = React.createElement("h1", {}, "Heading");
+
+		const head = (
+		  <div>
+			{heading} //-> heading returns react object
+		  </div>
+		);
+
+
+class-4
+
+For breaking code into components and use it again we have to use something knows as import and export keywords.
+Exporting from module:
+
+	-> Named export: 	Can be multiple
+	-> Default export:  Can only be one
+
+
+Import from module:
+
+	-> Named import: 	Can be multiple
+	-> Default import:  Can only be one
+
+example:
+
+	import Header from './components/Header';
+
+	import {Title} from './components/Header';
+
+	This is not object destructuring.
+
+If it is object destructuring, then we should be able to do this,,,
+
+	import obj from './components/Header'
+
+	const {Title} = obj; //not valid
+
+	obj.Title // not valid
+
+But we can do something like this ->
+
+	import * as Obj from './components/Header';
+
+	Obj.Title
+
+So, React is a default export from react library.
+
+For default imported element should not be necessary to be same name as default export name.
+
+	import Head from './components/Header'; // this will work as Head denotes Header
+
+Also, we can import both together as shown below:
+	import Header, { Title } from "./components/Header";
+Even,
+	import Header, { Title } from "./components/Header.js";
+	import Header, { Title } from "./components/Header.jsx";
+
+We can also do this,
+	import * as XYZ from "./components/Header";
+
+	<XYZ.Header />
+
+same as
+
+	<React.Fragment></React.Fragment>
+----------------------------------------
+
+React uses one way data binding only
+
+-------------------------------------------------------------
 State variable or React hook
 
 	react creates Virtual dom and to know react that something will change on an event, we attach a hook between data and virtual dom's element.
