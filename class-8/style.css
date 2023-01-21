@@ -1,0 +1,162 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 1080px;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  /* border: 1px solid #777; */
+  border-radius: 3%;
+}
+
+.nav,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+.nav > ul {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.nav > ul > li {
+  padding: 10px 10px;
+  margin: 5px 20px;
+}
+
+.logo {
+  height: 120px;
+  display: flex;
+}
+
+.card {
+  color: black;
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+  max-height: 260px;
+  /* width: fit-content; */
+  width: 233px;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+/* .card:hover {
+  border-radius: 2%;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+} */
+
+.card-image {
+  width: 100%;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.search-input {
+  border-radius: 25px;
+  outline: none;
+  padding: 5px;
+  height: 50px;
+  width: 25%;
+}
+
+.search-btn {
+  border: none;
+  outline: none;
+  border-radius: 80px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.shimmer-card {
+  margin: 5px 5px 5px 0px;
+  padding: 5px;
+  height: 260px;
+  max-height: 260px;
+  width: 233px;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.shimmer-image {
+  /* height: 180px;
+  width: 205px; */
+  height: 140px;
+  width: 223px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shimmer-name {
+  margin: 1px 10px;
+  height: 18px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shimmer-cuisines {
+  margin: 1px 10px;
+  height: 18px;
+  width: 190px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shimmer-ratings {
+  margin: 1px 10px;
+  height: 12px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shimmer {
+  color: grey;
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
+    100%;
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.restraunt-menu {
+}
+
+.menu-items {
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

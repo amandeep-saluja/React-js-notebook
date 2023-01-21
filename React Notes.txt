@@ -129,6 +129,7 @@ same as
 React uses one way data binding only
 
 -------------------------------------------------------------
+class-5/class-6
 State variable or React hook
 
 	react creates Virtual dom and to know react that something will change on an event, we attach a hook between data and virtual dom's element.
@@ -164,6 +165,7 @@ Never create a useState react variable outside component
 Formik -> npm package used to create forms.
 
 -------------------------------------------------------------------------------
+class-7
 
 createBrowserRouter -> function to create routers in our project -> and pass the routing configuration
 
@@ -194,3 +196,59 @@ reusable
 testable
 readable
 maintainable
+-------------------------------------------------------------------------------------
+class-8
+=======
+
+Class based components:
+
+	-> messy
+	-> iff creating new project, recommended not to create class based component...
+	-> non maintainable
+	-> To make a class as react component class and not JS class, we extends React.component
+	-> mandatory method to override is -> render() {}
+	-> we receive props inside this keyword.
+	-> we have to do this.props.{prop-name}
+	-> to create state variables in react, we have to create it inside the constructor
+	-> we have to pass the params of constructor inside the super(props) -> find why
+	-> do not set state vairable without set function else react does not know when to trigger reconciliation
+	
+	Parent - constructor
+	Parent - render 
+	Child - constructor
+	Child - render
+	Child - Comp did Mount
+	Parent - Comp did Mount
+	
+Routing children of children
+
+	-> parentPath/{path} => localhost:1234/about/profile
+	-> children component always rendered inside outlet and we need to create outlet inside it's parent...
+	
+Lifecycle of React class component
+
+->Render happens in two Phases
+	1. Render phase
+		-> calls constructor
+		-> calls render -> create virtual DOM and ready to put everything on browser
+						-> react batches up everything into one, (that's why if two child component's constructor is called just after render of first child)
+	2. Commit phase
+		-> React updates DOM & refs
+		-> componentDidMount calls
+	
+componentDidMount will be called after initial render is finished, browser has the 
+
+Parent Constructor
+Parent render
+	First Child constructor
+	First Child render
+	Second Child constructor
+	Second Child render
+	
+	Every child's rendered on DOM
+	
+	
+	
+Research Homework:
+Why to use super in constructor?
+Why can I make componentDidMount async and not useEffect async?
