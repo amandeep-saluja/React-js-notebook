@@ -6,11 +6,13 @@ import user from "../../user.json";
 class Profile extends React.Component {
   constructor(props) {
     super(props);
-    //Create State
-    console.log(this.props.xyz + " child constructor");
+    console.log("CBC child constructor", this.props.name);
+    // Create State variable
+    // to create state variables in react, we have to create it inside the constructor,
+    // best place to create the state variable, is constructor of class, as the classes are invoked
     this.state = {
-      //   count: 0,
-      //   count2: 0,
+      count: 0,
+      count2: 0,
       userInfo: json,
     };
   }
@@ -18,34 +20,55 @@ class Profile extends React.Component {
   async componentDidMount() {
     //Best place to make an Api call
 
-    // const data = await fetch(GITHUB_USER_API);
-    // const json = await data.json();
-    const json = user;
+    const data = await fetch(GITHUB_USER_API);
+    console.log(data);
+    const json = await data.json();
+    console.log(json);
+    // const json = user;
+    // How will I update my UI now with API data?
+    // By creating state variable...
 
     this.setState({
       userInfo: json,
     });
 
-    console.log(this.props.xyz + "child componentDidMount");
+    console.log("CBC child component did mount", this.props.name);
   }
 
-  componentDidUpdate() {
-    console.log("Component Did Update");
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (this.props.name !== prevProps.name) {
+      console.log(`name changed from ${prevProps.name} to ${this.props.name}`);
+    }
+    if (this.state.count !== prevState.count) {
+      console.log(
+        `count changed from ${prevState.count} to ${this.state.count}`
+      );
+    }
+    if (this.state.count2 !== prevState.count2) {
+      console.log(
+        `count2 changed from ${prevState.count2} to ${this.state.count2}`
+      );
+    }
+    console.log(this.state, prevState);
+    console.log(this.props, prevProps);
+    console.log(snapshot);
+    console.log("Child Component Did Update");
   }
 
   componentWillUnmount() {
-    console.log("Component Did unmount");
+    console.log("Child Component will unmount");
   }
 
   render() {
-    console.log(this.props.xyz + "child render");
-    // const { count, count2 } = this.state;
+    console.log("CBC child render", this.props.name);
+    const { count, count2 } = this.state;
     const { userInfo } = this.state;
+    const { name, surname } = this.props;
     return (
       <div>
         <h1>Profile class component</h1>
-        {/* <h3>{this.props.name}</h3>
-        <h3>{this.props.xyz}</h3>
+        <h3>{name}</h3>
+        <h3>{surname}</h3>
         <h4>Count: {count}</h4>
         <h4>Count2: {count2}</h4>
         <button
@@ -57,7 +80,7 @@ class Profile extends React.Component {
           }}
         >
           setCount
-        </button> */}
+        </button>
         <img src={userInfo.avatar_url} />
         <h2>Name: {userInfo.name}</h2>
         <h2>Location: {userInfo.location}</h2>

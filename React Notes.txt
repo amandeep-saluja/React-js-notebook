@@ -197,37 +197,82 @@ testable
 readable
 maintainable
 -------------------------------------------------------------------------------------
-class-8
-=======
+class-8 - Let's get Classy
+==========================
+
+Routing
+    -> How to make a route? -> react-router-dom
+    -> Learn and try to use various ways to create routers:
+        1. createBrowserRouter (Recommended)
+        2. createHashRouter
+        3. createMemoryRouter
+    -> Nested route inside a route -> Children of children
+    -> To render the nested child, an Outlet is to be created or child tag is need to be added in parent.
+
+    -> If you want to create a route in continuation of parent route, don't add / before it.
+    -> If u add / before a route, it will create a route from root.
+
+    -> Outlet will render that component inside itself, which child component's route is open.
+
+Routing children of children
+	-> parentPath/{path} => localhost:1234/about/profile
+	-> children component always rendered inside outlet and we need to create outlet inside it's parent...
 
 Class based components:
 
 	-> messy
 	-> iff creating new project, recommended not to create class based component...
 	-> non maintainable
-	-> To make a class as react component class and not JS class, we extends React.component
+	-> To make a class as react component class and not JS class, we use extends React.Component
 	-> mandatory method to override is -> render() {}
-	-> we receive props inside this keyword.
+	-> React watches for the change in props and re-renders the component.
+	-> Just like Functional Component has state, CBC also has it's state.
+
+	-> If we want to access the props inside constructor of CBC, we have to pass the props to super()
+	    else we will not be able to access the props, and we get undefined.
+	    This is because React have not assigned the props to the context (this) inside the constructor,
+	    and even we are able to access the props inside the render method using this (context), this is because
+	    React assigns the props to instance of the class explicitly after initializing it.
+	    see below:
+	    //React under the hood
+        const instance = new DefinedComponent(props);
+        instance.props = props;
+
+	-> we receive props inside `this` keyword.
 	-> we have to do this.props.{prop-name}
-	-> to create state variables in react, we have to create it inside the constructor
-	-> we have to pass the params of constructor inside the super(props) -> find why
-	-> do not set state vairable without set function else react does not know when to trigger reconciliation
-	
+	-> to create state variables in react, we have to create it inside the constructor,
+	    best place to create the state variable, is constructor of class, as the classes are invoked
+	-> do not set state variable without set function else react does not know when to trigger reconciliation
+
+React Life Cycle:
+
+    -> useEffect is the best place to call the API, as it calls after the initial render completes.
+    -> similarly componentDidMount() is the best place to call the API in CBC.
+
+Order in which life cycle hooks of parent and child component will be triggered:
 	Parent - constructor
 	Parent - render 
 	Child - constructor
 	Child - render
-	Child - Comp did Mount
-	Parent - Comp did Mount
-	
-Routing children of children
+	Child - Component did Mount
+	Parent - Component did Mount
 
-	-> parentPath/{path} => localhost:1234/about/profile
-	-> children component always rendered inside outlet and we need to create outlet inside it's parent...
-	
+Order in which life cycle hooks of parent and 2 child components will be triggered:
+    Parent - constructor
+	Parent - render
+        First Child - constructor
+        First Child - render
+        Second Child - constructor
+        Second Child - render
+        First Child - Component did Mount
+        Second Child - Component did Mount
+	Parent - Component did Mount
+
 Lifecycle of React class component
+    ->refer-Diagram
+        https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
-->Render happens in two Phases
+->React Render happens in two Phases
 	1. Render phase
 		-> calls constructor
 		-> calls render -> create virtual DOM and ready to put everything on browser
@@ -237,18 +282,51 @@ Lifecycle of React class component
 		-> componentDidMount calls
 	
 componentDidMount will be called after initial render is finished, browser has the 
+---------------------------------------------------------------------------------------------------------------
+Parent Constructor                          ||
+Parent render                               ||
+	First Child constructor                 ||              Render Phase
+	First Child render                      ||
+	Second Child constructor                ||              This is the place where react renders all
+	Second Child render                     ||              the child components at once.
 
-Parent Constructor
-Parent render
-	First Child constructor
-	First Child render
-	Second Child constructor
-	Second Child render
-	
-	Every child's rendered on DOM
-	
-	
-	
+----------------------------------------------------------------------------------------------------------------
+
+	Every child's rendered on DOM           ||              This is the place where browser starts updating DOM
+                                            ||
+	First Child - componentDidMount         ||              Commit Phase
+	Second Child - componentDidMount        ||
+Parent componentDidMount                    ||              <- Best place to make API call
+                                            ||                  as all the rendering and committing is complete.
+----------------------------------------------------------------------------------------------------------------
+
+
+Order in which life cycle hooks of parent and child components with async componentDidMount will be triggered:
+---------------------------------------------------------------------------------------------------------------
+    Parent - constructor                    ||
+	Parent - render                         ||              Render phase
+    Child - constructor                     ||              Mounting Cycle
+    Child - render                          ||
+---------------------------------------------------------------------------------------------------------------
+    DOM is updated                          ||
+	Parent - Component did Mount            ||              Commit Phase
+    json is logged in console               ||              -> calls setState()
+    Child - Component did Mount             ||              -> updates the state -> re-render the child component
+---------------------------------------------------------------------------------------------------------------
+    Child - render                          ||              Updating Cycle
+    Child - componentDidUpdate              ||
+---------------------------------------------------------------------------------------------------------------
+    Parent - unmount                        ||              Unmounting cycle
+    Child - unmount                         ||
+---------------------------------------------------------------------------------------------------------------
+due to async added in the componentDidMount of child component,
+it loaded asynchronously and delays the load of it.
+
+-> When componentDidMount will be called -> Once after first render
+-> When componentDidUpdate will be called -> After every render
+
+What that signifies -> It is similar behaviour like useEffect()
+
 Research Homework:
 Why to use super in constructor?
 Why can I make componentDidMount async and not useEffect async?
