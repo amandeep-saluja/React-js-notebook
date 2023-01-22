@@ -4,7 +4,7 @@ React class-2:
 
 How to add react into our app:
 
-We have to import the react library in our code by several ways:
+We have to import the React library in our code by several ways:
 
 1. add react js files from cdn using script tag
 2. add react files using bundler
@@ -252,3 +252,40 @@ Parent render
 Research Homework:
 Why to use super in constructor?
 Why can I make componentDidMount async and not useEffect async?
+
+-------------------------------------------------------------------------
+class-9
+
+How many times componentDidMount gets called? -> once
+
+How many times componentDidUpdate gets called? -> after every state change
+
+When componentDidUnmount called for ? -> for cleanup
+
+Functional component -> It's a function that returns JSX
+
+hooks -> It's a function that does not return JSX but other values
+        useState - returns array
+        useEffect - returns void
+
+helper component
+    -> to hold the reusable functions in utils
+
+Custom Hooks
+    useOnline
+
+Lazy Loading
+    -> Chunking
+    -> Code splitting
+    -> Dynamic Bundling
+    -> Lazy loading
+    -> On Demand Loading
+    -> Dynamic Import
+
+    -> It fails to load the component and suspends the rendering, as module takes time to load
+    -> It's an SPA. It will not reload, but in second time it has the code loaded in browser and hence it works.
+
+    -> To overcome this error, react gave us a component named Suspence from "react" package.
+    -> It will take care of the loading of module and render
+
+Never load the lazy loaded component inside another component.

@@ -23,20 +23,25 @@ const Body = () => {
   // -> dep arrat [searchTxt] => once after initial render + everytime after render ( my searchTxt changes)
   useEffect(() => {
     // API call
-    getRestraunts();
+    getRestaurants();
     console.log("useEffect called.");
   }, []);
 
-  async function getRestraunts() {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.613322&lng=73.800667&page_type=DESKTOP_WEB_LISTING"
-    );
-    const json = await data.json();
-    console.log(json);
-    //Optional Chaining
-    //console.log(json?.data?.cards[2]?.data?.data?.cards);
-    setAllRestraunts(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+  async function getRestaurants() {
+    try {
+      const data = await fetch(
+          "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.613322&lng=73.800667&page_type=DESKTOP_WEB_LISTING"
+      );
+      const json = await data.json();
+      console.log(json);
+      //Optional Chaining
+      //console.log(json?.data?.cards[2]?.data?.data?.cards);
+      setAllRestraunts(json?.data?.cards[2]?.data?.data?.cards);
+      setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    }
+    catch (err) {
+      console.log(err);
+    }
   }
 
   console.log("render");
