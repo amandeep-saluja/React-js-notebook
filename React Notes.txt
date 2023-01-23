@@ -1,5 +1,5 @@
 React is a javascript library and not a framework.
-
+-----------------------------------------------------
 React class-2:
 
 How to add react into our app:
@@ -44,7 +44,7 @@ How to ignite our app
 
 npx parcel index.html
 
-
+--------------------------------------------------------------------------------------
 React class-3
 
 
@@ -67,7 +67,7 @@ Note:
 		  </div>
 		);
 
-
+-----------------------------------------------------------------------------------
 class-4
 
 For breaking code into components and use it again we have to use something knows as import and export keywords.
@@ -128,7 +128,7 @@ same as
 
 React uses one way data binding only
 
--------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 class-5/class-6
 State variable or React hook
 
@@ -163,8 +163,8 @@ react gives you useState to create local variable inside your component.
 Never create a useState react variable outside component
 
 Formik -> npm package used to create forms.
-
--------------------------------------------------------------------------------
+https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+-------------------------------------------------------------------------------------------------------
 class-7
 
 createBrowserRouter -> function to create routers in our project -> and pass the routing configuration
@@ -344,21 +344,49 @@ class-9
 
 How many times componentDidMount gets called? -> once
 
-How many times componentDidUpdate gets called? -> after every state change
+How many times componentDidUpdate gets called? -> after every state change or props change
+
+Basically update will be triggered only when something changes
+by something it can be
+    -> setState() called
+    -> new props passed
+    -> forceUpdate() called
 
 When componentDidUnmount called for ? -> for cleanup
+
+Why do we need hooks?
+-> React Hooks uses
+    -> reusability (can be used anywhere in code base)
+    -> readability (don't have to worry about code written inside it)
+    -> maintainability (easy to debug)
+    -> testable (test only individual components)
+    -> modularity (broken down into meaningful pieces or chunks)
+
+-> Keep commonly usable functions in a common file.
+-> That may call as, shared or utils or helper.
 
 Functional component -> It's a function that returns JSX
 
 hooks -> It's a function that does not return JSX but other values
+        useParam - returns object
         useState - returns array
         useEffect - returns void
+      -> It can return any value. We can offload any functionality to it.
+      -> we cannot use hooks inside a normal function. It is accessible inside Functional Component.
 
 helper component
     -> to hold the reusable functions in utils
 
 Custom Hooks
     useOnline
+    useLoggedIn
+    useLocalStorage
+
+Parcel bundles up the code into 1 JS file, but if our app is very large production level then
+it would be difficult to load the page faster, and it will impact out performance.
+
+We can split the code into multiple logical bundles, which can be load when user browse specific module.
+We should do chunking of the JS files.
 
 Lazy Loading
     -> Chunking
@@ -368,10 +396,14 @@ Lazy Loading
     -> On Demand Loading
     -> Dynamic Import
 
+-> We will use lazy() method from react library, which will need a callback that returns dynamically imported component
+
     -> It fails to load the component and suspends the rendering, as module takes time to load
     -> It's an SPA. It will not reload, but in second time it has the code loaded in browser and hence it works.
 
-    -> To overcome this error, react gave us a component named Suspence from "react" package.
-    -> It will take care of the loading of module and render
+    -> To overcome this error, react give us a component named Suspense from "react" package.
+    -> It will take care of the loading of module and render.
+    -> Suspense component is present in react package, it takes fallback props to which we need to provide fallback JSX
+        to show or component name, such as Shimmer.
 
 Never load the lazy loaded component inside another component.
