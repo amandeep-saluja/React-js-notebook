@@ -36,7 +36,7 @@ class Profile extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    if (this.props.name !== prevProps.name) {
+    /*if (this.props.name !== prevProps.name) {
       console.log(`name changed from ${prevProps.name} to ${this.props.name}`);
     }
     if (this.state.count !== prevState.count) {
@@ -51,11 +51,15 @@ class Profile extends React.Component {
     }
     console.log(this.state, prevState);
     console.log(this.props, prevProps);
-    console.log(snapshot);
+    console.log(snapshot);*/
+    this.timer = setInterval(() => {
+      console.log("NAMASTE REACT OP...!!!");
+    }, 1000);
     console.log("Child Component Did Update");
   }
 
   componentWillUnmount() {
+    clearInterval(this.timer);
     console.log("Child Component will unmount");
   }
 

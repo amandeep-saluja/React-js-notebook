@@ -318,6 +318,7 @@ Order in which life cycle hooks of parent and child components with async compon
 ---------------------------------------------------------------------------------------------------------------
     Parent - unmount                        ||              Unmounting cycle
     Child - unmount                         ||
+    useEffect - return                      ||              <- unmounting phase in FBC
 ---------------------------------------------------------------------------------------------------------------
 due to async added in the componentDidMount of child component,
 it loaded asynchronously and delays the load of it.
@@ -326,6 +327,13 @@ it loaded asynchronously and delays the load of it.
 -> When componentDidUpdate will be called -> After every render
 
 What that signifies -> It is similar behaviour like useEffect()
+
+Cons of SPA:
+    -> When we define a setInterval of 1 sec in componentDidMount, it will start calling callback after each sec
+    -> Even if we change the route to some other page in SPA, it does not reload and
+        hence setInterval will call even after page change.
+    -> Each time, when we revisit the page that has setInterval, it will trigger new setInterval.
+        So there will be multiple setInterval started running in background, that are killing the performance.
 
 Research Homework:
 Why to use super in constructor?

@@ -5,8 +5,17 @@ const Profile = (props) => {
   const [count2, setCount2] = useState(0);
   useEffect(() => {
     //API call
+    const timer = setInterval(() => {
+      console.log("NAMASTE REACT OP...!!!");
+    }, 1000);
     console.log("FBC child useEffect");
-  }, [count, count2]);
+
+    return () => {
+      //This is called when Functional component gets unmounted.
+      clearInterval(timer);
+      console.log("useEffect return");
+    };
+  }, []);
   console.log("FBC child render", props);
 
   return (
