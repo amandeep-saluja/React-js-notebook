@@ -164,38 +164,78 @@ Never create a useState react variable outside component
 
 Formik -> npm package used to create forms.
 https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+
 -------------------------------------------------------------------------------------------------------
-class-7
+class-7 - Finding the Path
 
-createBrowserRouter -> function to create routers in our project -> and pass the routing configuration
+Don'ts
+-> Do not create component inside another component. -> It will create render issues.
+-> Do not write hooks inside if else statements. -> That will create inconsistency in the state variable.
+-> Never write inside the for loop. -> That will cause multiple variable creation in same name.
 
-createBrowserRouter-> it takes list of paths 
+Note:
+-> React gives us useState to create local state variable inside our functional component.
+-> Never use useState outside functional component.
+-> You can use several useEffects according to their use case.
+-> Images are always imported as Named import.
 
-after creating the routing configuration, it just don't work unless we provide it to our app..
+Routing:
 
-For this use, RouterProvider... and provide the routing configuration to it...
+To create routing of the application, we have to create routing configuration.
+For that we need to use createBrowserRouter() function from react-router-dom package,
+that requires array of objects as routing configuration or paths.
 
-ErrorElement -> error component
+-> Routing configuration object requires following properties:
+    * path: "/" -> It signifies that if we load page from root path what should happen.
+    * element: <AppLayout /> -> pass the tag name that should be load at above path.
+    * errorElement: <Error /> -> pass the error tag that should be loaded in case of error.
 
-Routing ->
+-> After creating the routing configuration, it just doesn't work unless we provide it to our app.
+-> To provide the routing configuration create by createBrowserRouter() function to react render() function
+    we need to use RouterProvider component and pass appRouter configuration as props to it.
+-> RouterProvider component is named exported by react-router-dom package.
 
+-> To access the error information in Error functional component, react-router-dom provided us
+    useRouteError() hook.
+
+-> Routing:
 	1. Client side routing
 	2. Server side routing
-----------------------------------------------------------------------------
-Single Page Application (SPA):
-To avoid the server side routing and eliminate the server side routing we will use the client side routing....
 
-to load the components according to route dynamically we use outlet to fill in with child component.
+-> Single Page Application (SPA):
+    To avoid the server side routing and eliminate the server side routing we will use the client side routing.
 
-All the childrens of my component go into the outlet according to route.
+-> Problem of anchor tag is that, when we click on it, it will reload the whole page, instead of changing the page.
+    It will route at server side and reload the whole page.
 
-to use the params from routing path -> react-route-dom package provided us something known as useParams() hook.
+-> To create clickable links in page instead of anchor tag that reloads the whole page, react-router-dom package
+    have provided us Link component, which is a named exported component, that takes to="/" path, and
+     internally converts it to anchor tag (because in the end everything has to be converted into something that
+     browser understand) and keeps a track of it, so that whenever it is clicked, Link will navigate to corresponding page.
+
+-> To route the nested paths and load the components specified inside children in a specific place, react-router-dom
+    provided us an Outlet component (Named exported component), using which we can navigate to desired
+    component at specified path.
+
+-> To load the components according to route dynamically we use outlet to fill in with child component.
+    All the children of my component go into the outlet according to route.
+
+-> Outlet tag should be kept inside the element's component tag and all the children paths will be replaced with
+    the child components in place out outlet.
+
+-> When we goto home page from about page, home page renders 2 times.
+    Render -> API call -> Re-Render.
+
+Dynamic Segments/Dynamic Routing:
+-> To use the params from routing path react-route-dom package provided us something known as useParams() hook.
+-> It will help to read dynamic URL params
 
 modular
 reusable
 testable
 readable
 maintainable
+
 -------------------------------------------------------------------------------------
 class-8 - Let's get Classy
 ==========================
