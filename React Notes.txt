@@ -380,7 +380,7 @@ Why to use super in constructor?
 Why can I make componentDidMount async and not useEffect async?
 
 -------------------------------------------------------------------------
-class-9
+class-9 -
 
 How many times componentDidMount gets called? -> once
 
@@ -447,3 +447,65 @@ Lazy Loading
         to show or component name, such as Shimmer.
 
 Never load the lazy loaded component inside another component.
+---------------------------------------------------------------------------------------------------------------------
+class-10 - Jo dikhta hai vo bikta hai
+=====================================
+
+Tailwind CSS - New and popular CSS framework
+Base Web - Uber uses
+MUI - Material UI - Google
+Ant Design - Alibaba Group
+Chakra UI
+PrimeFlex
+
+Ways to add CSS to our project:
+1. native way - style.css
+2. SCSS and SASS
+3. Inline CSS
+4. CSS Framework/Libraries or Component Libraries
+5. Styled Components
+
+Pros of using libraries:
+1. Reuasability
+2. Consistency
+3. Easy to write
+4. Reduce time
+5. no duplicate css
+6. code is less
+7. Fast development
+8. Easy to debug
+
+Cons of using libraries:
+1. Loss of control
+2. Increased bundle size
+3. Too much classes
+4. High initial learning curve
+5. Readability issues
+
+Tailwind CSS Framework
+    -> CSS on the go (in the same file)
+    -> Reusability
+    -> Less bundle size
+    -> Flexible UI (Customizable UI)
+
+Ways to use tailwind CSS
+    -> CDN links
+    -> NPM package
+        -> 1. Install tailwindcss and postcss
+            -> npm install -D tailwindcss postcss
+            -> npx tailwindcss init
+        -> 2. tailwind.config.js
+            -> to configure the paths which file will contain tailwind classes
+        -> 3. .postcssrc
+            -> post css rc file to enable plugin to recognize tailwindcss while parcel bundling
+        -> 4. add below lines in style.css, to start parcel recognize tailwind css classes.
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+
+
+-> postcss rc file takes this config and tells our project/parcel, we are using so many css files
+    compile all the css files into style.css file.
+-> Tailwind overrides default css of each tag
+
+-> Box array notation to mention precisely how much i want to provide css in px
