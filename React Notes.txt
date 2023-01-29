@@ -509,3 +509,54 @@ Ways to use tailwind CSS
 -> Tailwind overrides default css of each tag
 
 -> Box array notation to mention precisely how much i want to provide css in px
+----------------------------------------------------------------------------------------------------
+class-11 - Data is the new Oil
+==============================
+
+Data is the most crucial thing in any production app.
+
+Layers:
+    -> UI layer   - what ever we see on the browser page
+    -> Data layer - holds data required to be show on UI
+
+Babel-> converts JSX to react object
+
+JSX -> React object -> vDOM -> reconciliation (diff between current vDOM and previous copy of vDOM) -> diff is sync with Real DOM
+
+-> state & props that manages the data in Data layer
+
+-> there are more ways to manage data in Data Layer.
+
+-> If we want to pass data from 1 comp to another comp -> we use props
+-> If we want to keep data within a container, then we need a local variable -> we use state
+
+PROPS DRILLING
+-> If we have a state variable in our super parent, and we need props data into grand child component,
+    then we pass the data to child, component by component.
+-> We drill down the component to get the data to child component.
+    (Props Drilling: a situation where data is passed from one component through multiple interdepedent
+    components until you get to the component where the data is needed.)
+-> Not a good way, we need to modify all the files to get the props till child. Flutters the code.
+
+-> Use React Devtools Chrome Extension to debug the props in a very large production app.
+
+How to pass the data from children to parent?
+-> Very fewer cases, but has many ways to do so.
+
+1. Custom hooks
+2. Local storage - Bad way
+3. Mobix
+4. Context API
+5. NGRX
+6. Flux
+7. Redux
+
+Lifting the state up.
+
+-> Data needs to be maintainable in proper format
+
+-> useContext is a React hook that returns the data from a context, provided by react package
+-> createContext is a function that creates context, provided by react package
+
+-> you can give name to  conetxt name by
+    UserContext.displayName = "UserContext"
