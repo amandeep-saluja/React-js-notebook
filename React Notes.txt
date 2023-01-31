@@ -519,13 +519,22 @@ Layers:
     -> UI layer   - what ever we see on the browser page
     -> Data layer - holds data required to be show on UI
 
-Babel-> converts JSX to react object
+UI Layer is build with JSX,(Babel is used to convert the JSX into React Objects),
+then React converts it into big object, which is known as Virtual Document Object Model vDOM.
+This V-DOM is used for Reconciliation, which calculates Diff. Diff is between current V-DOM and
+previous V-DOM, then this diff is sync with actual DOM in browser.
 
-JSX -> React object -> vDOM -> reconciliation (diff between current vDOM and previous copy of vDOM) -> diff is sync with Real DOM
+JSX -> React object -> vDOM -> Reconciliation (diff between current vDOM and previous copy of vDOM) -> diff is sync with Real DOM
 
--> state & props that manages the data in Data layer
+Data is maintained & managed in the Data Layer in UI using
+-> state
+-> props
 
 -> there are more ways to manage data in Data Layer.
+
+-> Main difference between state and props is, If we need a variable which has a scope just within that container
+    or component, that variable is known as state, it is the local variable.
+    Props is the data, we can pass from one component (parent) to another component (child).
 
 -> If we want to pass data from 1 comp to another comp -> we use props
 -> If we want to keep data within a container, then we need a local variable -> we use state
@@ -536,9 +545,17 @@ PROPS DRILLING
 -> We drill down the component to get the data to child component.
     (Props Drilling: a situation where data is passed from one component through multiple interdepedent
     components until you get to the component where the data is needed.)
--> Not a good way, we need to modify all the files to get the props till child. Flutters the code.
+-> Not a good way, we need to modify all the files to get the props till child.
+-> whenever these props are changed, then every component will be re-rendered through which 
+    this props is been passed to child. Clutters the code. Unnecessary code and variables in our code.
+-> Best way is to shift the control to parent and control the state of all the sections.
+-> But if we create state for each section the to save and change value of each section would be extremely difficult,
+    better way is to save the state of only shown section.
 
+React Dev Tools
 -> Use React Devtools Chrome Extension to debug the props in a very large production app.
+-> Profiler will help you to record the whole browsing session, and we can track which component took how much time.
+-> Loading time taken by each component.
 
 How to pass the data from children to parent?
 -> Very fewer cases, but has many ways to do so.
@@ -558,5 +575,5 @@ Lifting the state up.
 -> useContext is a React hook that returns the data from a context, provided by react package
 -> createContext is a function that creates context, provided by react package
 
--> you can give name to  conetxt name by
+-> you can give name to  context name by
     UserContext.displayName = "UserContext"
