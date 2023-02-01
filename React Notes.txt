@@ -577,3 +577,8 @@ Lifting the state up.
 
 -> you can give name to  context name by
     UserContext.displayName = "UserContext"
+
+------------------------------------------------------------------------------------------
+Personal Branding
+1. unique way to represent
+2. Enjoyable
