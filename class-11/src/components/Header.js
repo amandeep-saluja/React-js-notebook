@@ -48,7 +48,7 @@ const Header = () => {
                     </li>
                     <li className={'m-5'}>Cart</li>
                 </ul>
-                {user && isLoggedIn && <div className={'p-10 m-8 text-xl font-bold'}>{user.name}</div>}
+                {user && isLoggedIn && <div className={'p-10 m-8 text-xl font-bold text-red-900'}>{user.name}</div>}
                 {isLoggedIn ? (
                     <button onClick={() => setIsLoggedIn(false)}>Logout</button>
                 ) : (

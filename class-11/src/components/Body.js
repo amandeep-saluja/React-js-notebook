@@ -67,16 +67,30 @@ const Body = () => {
                 >
                     Search
                 </button>
-                <input
-                    className={'px-4 py-2 rounded-2xl hover:bg-cyan-300 focus:bg-amber-400'}
-                    value={user.name}
-                    onChange={(e) =>
-                        setUser({
-                            name: e.target.value,
-                            email: e.target.value,
-                        })
-                    }
-                />
+                <div>
+                    <label className={'p-6 m-4'}>Name: </label>
+                    <input
+                        className={'px-4 py-2 rounded-2xl hover:bg-cyan-300 focus:bg-amber-400'}
+                        value={user.name}
+                        onChange={(e) =>
+                            setUser({
+                                ...user,
+                                name: e.target.value,
+                            })
+                        }
+                    />
+                    <label className={'p-6 m-4'}>Email Id:</label>
+                    <input
+                        className={'px-4 py-2 rounded-2xl hover:bg-cyan-300 focus:bg-amber-400'}
+                        value={user.email}
+                        onChange={(e) =>
+                            setUser({
+                                ...user,
+                                email: e.target.value,
+                            })
+                        }
+                    />
+                </div>
             </div>
             <div className="restaurant-list flex flex-wrap">
                 {filteredRestaurants.map((restaurant) => (

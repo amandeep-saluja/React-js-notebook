@@ -20,11 +20,18 @@ class About extends Component {
         return (
             <div>
                 <h1>About Us Page</h1>
+                <UserContext.Consumer>
+                    {({ user }) => {
+                        console.log(user.name);
+                        return (
+                            <span className={'font-bold text-3xl text-red-600 p-10'}>
+                                {user.name} - {user.email}
+                            </span>
+                        );
+                    }}
+                </UserContext.Consumer>
                 <p> This is Namaste react js class</p>
-                {/* <Outlet /> */}
                 <Profile name={'Aman'} xyz={'First '} />
-                {/* <Profile name={"Aman"} xyz={"second "} /> */}
-                {/* <Profile name={"Amandeep"} xyz={"jnafs"} /> */}
             </div>
         );
     }

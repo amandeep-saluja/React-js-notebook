@@ -26,6 +26,7 @@ const AppLayout = () => {
         name: 'Amandeep Singh Saluja',
         email: 'amandeepsaluja25@gmail.com',
     });
+    const newUser = { name: 'Rahul', email: 'rahul@gmail.com' };
     return (
         <>
             {/*//Even we can pass in different data in different component if we need.*/}
@@ -35,6 +36,8 @@ const AppLayout = () => {
             <UserContext.Provider value={{ user: user, setUser: setUser }}>
                 <Header />
                 <Outlet />
+            </UserContext.Provider>
+            <UserContext.Provider value={{ user: newUser }}>
                 <Footer />
             </UserContext.Provider>
         </>

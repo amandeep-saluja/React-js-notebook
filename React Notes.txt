@@ -543,42 +543,69 @@ PROPS DRILLING
 -> If we have a state variable in our super parent, and we need props data into grand child component,
     then we pass the data to child, component by component.
 -> We drill down the component to get the data to child component.
-    (Props Drilling: a situation where data is passed from one component through multiple interdepedent
+    (Props Drilling: a situation where data is passed from one component through multiple interdependent
     components until you get to the component where the data is needed.)
 -> Not a good way, we need to modify all the files to get the props till child.
 -> whenever these props are changed, then every component will be re-rendered through which 
-    this props is been passed to child. Clutters the code. Unnecessary code and variables in our code.
+    these props are been passed to child. Clutters the code. Unnecessary code and variables in our code.
 -> Best way is to shift the control to parent and control the state of all the sections.
 -> But if we create state for each section the to save and change value of each section would be extremely difficult,
     better way is to save the state of only shown section.
+
+Lifting the state up.
+-> Data needs to be maintainable in proper format so that we don't make it so complicated to handle.
+-> Create or manage state inside parent component instead of child component.
+-> Store only details of the component having state change, instead of storing state of all components.
 
 React Dev Tools
 -> Use React Devtools Chrome Extension to debug the props in a very large production app.
 -> Profiler will help you to record the whole browsing session, and we can track which component took how much time.
 -> Loading time taken by each component.
 
+Various ways to create central state management:
+    1. Custom hooks
+    2. Local storage - Bad way
+    3. MobX
+    4. Context API
+    5. NGRX
+    6. Flux
+    7. Redux
+
+->We can create a global variable, but it won't work as React is not tracking it. Whenever the value of the variable change
+    It will not reflect on DOM.
+
+React Context
 How to pass the data from children to parent?
 -> Very fewer cases, but has many ways to do so.
 
-1. Custom hooks
-2. Local storage - Bad way
-3. Mobix
-4. Context API
-5. NGRX
-6. Flux
-7. Redux
+-> createContext is a function that creates context, provided by react package, and takes default value
+    as input and returns object of type Context.
+-> useContext is a React hook that takes context name and returns the data from a context, provided by react package
+-> Context is like useState for whole application. We can use context wherever we wish to.
 
-Lifting the state up.
+How to use UserContext inside Class based components?
+-> We have to use UserContext.Consumer tag, which takes in JSX of a function with value of userContext as params,
+    and returns the JSX that should be rendered on page.
 
--> Data needs to be maintainable in proper format
-
--> useContext is a React hook that returns the data from a context, provided by react package
--> createContext is a function that creates context, provided by react package
-
+How to modify the default value of context after making API call?
+-> We can override the default value of context using UserContext.Provider component, by passing this component a props
+    as data object. Whenever useContext modifies, it will modify the props to Provider component and reconciliation
+    triggers everywhere.
+-> We can create different UserContext.Provider with different data for small portion of our app.
+-> React router dom uses context behind the scenes. We can see that inside component
+    tab of react-tools as DataRouter.Provider.
 -> you can give name to  context name by
     UserContext.displayName = "UserContext"
+    so that React tools can track the component name.
+-> Context is so powerful that, If we update the context from one place, it will get reflected in the lazy loaded component.
+    At the time of lazy component loading the update context value is provided to it.
+-> Data Layer and UI Layer works independently and Data Layer manages all the data, it stays as is, and UI Layer updates
+    the UI Layer and do all the reconciliation, making and rendering of the components -> Virtual DOM.
 
+H.W.
+->Multiple context
+->Nesting of context
 ------------------------------------------------------------------------------------------
 Personal Branding
-1. unique way to represent
+1. Unique way to represent
 2. Enjoyable
