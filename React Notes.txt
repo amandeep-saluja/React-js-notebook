@@ -609,3 +609,88 @@ H.W.
 Personal Branding
 1. Unique way to represent
 2. Enjoyable
+
+------------------------------------------------------------------------------------------
+class-12 Let's build our store - Redux
+
+Pros:
+1. Central State management.
+2. Any component can modify and any component can read.
+
+Cons:
+1. Use it when you are building large application.
+2. Huge learning curve.
+3. Very complex to initial setup.
+4. Bundler and React/REDUX
+
+-> Redux came up with Redux-toolkit to solve the complexity.
+
+-> state has a local scope
+-> props can be passed on to down components from parent
+-> context is a central place, a big object
+-> store is similar to context, a central place of keeping all the data
+
+-> we can have multiple context, but in React we will have only 1 store.
+
+-> We'll Create diff Slices of our Store
+-> we can have multiple slice inside a store, like cart, user, slice
+-> our component cannot modify our store , -> we need to dispatch an action. like -> add an item.
+-> this action will then call a function(normal JS function) -> this function will then modify our cart.
+-> This normal JS function which updates the state is known as reducer function.
+
+-> onClick => dispatch an action => calls reducer => which updates the store
+-> If we click on the + button, it will dispatch an action, which will call a
+    reducer function, which modifies our slice of redux store.
+
+WRITE CYCLE:
+-> When we click on the + Button, it dispatches an action which calls the reducer function which updates the slice of our redux store.
+
+READ CYCLE:
+-> when we have to read slice of our store, we call the SELECTOR, and it will update my CART.
+
+Selector:
+-> Its a React hook, which selects the slice from out store and return.
+-> cart component has subscribed to the store. When cart slice in the store, it will be automatically modify in the cart UI.
+
+We need a new library:
+
+npm i @reduxjs/toolkit (AKA RTK - Redux TookKit)
+
+npm i react-redux
+
+Why 2 library:
+* redux lib -> manage the store, maintain - core of redux.
+* react-react -> bridge library
+
+We need to create a new store js file, in which we will use configureStore function from @reduxjs/toolkit package.
+To use this store we need a component Provider from react-redux library, and pass the props store as our store.
+
+1. Created a store using configureStore() (function from @reduxjs/toolkit)
+2. Provided my store to app using Provider component from react-redux library. Passed store as props(store) to it.
+3. Created a slice using createSlice(function from @reduxjs/toolkit library). It needs to be passed
+    an object containing following keys:
+    1. name: ""
+    2. initialState: {}
+    3. reducers: {
+            action-name : (state, action) => {
+                    // reducer function.
+                    state = action.payload
+                }
+        }
+4. export default cartSlice.reducer and named export actions;
+5. Put the slice into store using an object:
+    {
+        reducer: {
+            cart: -> default exported reducer from cart slice,
+            user: -> -> default exported reducer from user slice
+        }
+    }
+
+Steps to use the slice in our app:
+1. On click on addItem button from our menu, it should call a function handleAddItem
+2. This function will dispatch an action. for this we need a hook useDispatch from react-redux library.
+    which takes an action name function call with argument as item, that needs to be added in slice.
+    -> dispatch(addItem('Grapes'));
+3. Action should be named import from slice
+    -> import { addItem } from '../store/cartSlice';
+
