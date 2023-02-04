@@ -48,7 +48,7 @@ const Body = () => {
         <Shimmer />
     ) : (
         <>
-            <div className="flex justify-around my-8 p-8 bg-pink-50 shadow-lg">
+            <div className="flex justify-around m-10 p-8 bg-pink-50 shadow-lg">
                 <input
                     type="text"
                     className="px-4 py-2 rounded-2xl hover:bg-cyan-300 focus:bg-amber-400"

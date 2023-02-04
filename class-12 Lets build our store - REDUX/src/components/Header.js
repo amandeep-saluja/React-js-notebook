@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 const Title = () => {
     return (
         <img
-            className="logo h-28 p-2"
+            className="logo h-32 p-2 m-2"
             alt="logo"
             // src="http://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4"
             src={Logo}
@@ -23,7 +23,7 @@ const Header = () => {
     console.log(cartItems);
     return (
         <>
-            <nav className="flex justify-between content-center bg-pink-50 shadow-lg">
+            <nav className="flex justify-between content-center bg-pink-50 shadow-lg m-10">
                 <Title />
                 {isOnline ? <span style={{ padding: '40px' }}>✅</span> : <span style={{ padding: '40px' }}> ❌</span>}
                 <ul className={'flex m-10 text-2xl'}>
