@@ -5,6 +5,7 @@ import Shimmer from './Shimmer';
 import { filterData } from '../utils/helper';
 import useOnline from '../hooks/useOnline';
 import UserContext from '../utils/UserContext';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const Body = () => {
     const [allRestaurants, setAllRestaurants] = useState([]);
@@ -12,6 +13,8 @@ const Body = () => {
     const [searchTxt, setSearchTxt] = useState('');
 
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+
+    const key = 'foodItems';
 
     const { user, setUser } = useContext(UserContext);
 

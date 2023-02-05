@@ -4,6 +4,7 @@ import useOnline from '../hooks/useOnline';
 import { useContext, useState } from 'react';
 import UserContext from '../utils/UserContext';
 import { useSelector } from 'react-redux';
+import useLocalStorage from '../hooks/useLocalStorage';
 const Title = () => {
     return (
         <img
@@ -19,7 +20,12 @@ const Header = () => {
     const isOnline = useOnline();
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const { user } = useContext(UserContext);
+
     const cartItems = useSelector((store) => store.cart.items);
+    const key = 'foodItems';
+    const { cart, setCart } = useLocalStorage(key, cartItems);
+
+    console.log('cart', cart);
     console.log(cartItems);
     return (
         <>

@@ -2,7 +2,7 @@ import { IMG_CDN_URL } from '../constants';
 import { useContext } from 'react';
 import UserContext from '../utils/UserContext';
 
-const RestrauntCard = ({ name, cloudinaryImageId, cuisines, totalRatingsString }) => {
+const RestaurantCard = ({ name, cloudinaryImageId, cuisines, totalRatingsString }) => {
     const { user } = useContext(UserContext);
 
     return (
@@ -24,4 +24,4 @@ const RestrauntCard = ({ name, cloudinaryImageId, cuisines, totalRatingsString }
     );
 };
 
-export default RestrauntCard;
+export default RestaurantCard;
