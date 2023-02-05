@@ -694,3 +694,121 @@ Steps to use the slice in our app:
 3. Action should be named import from slice
     -> import { addItem } from '../store/cartSlice';
 
+
+
+------------------------------------------------------------------------------------------------------
+class-13 Time for the test
+
+Enzyme Testing - Previously used library
+
+React Testing Library (RTL)
+JEST
+
+-> TDD development is best.
+-> selenium testing done by QAs
+
+Different types of testing:
+    1. Manual Testing
+    2. Automation Testing
+        -> Selenium Testing
+        -> E2E testing - covers entire user Journey
+        -> Unit Testing
+        -> Integration Testing
+
+
+Head less browser
+
+
+npm i -D @testing-library/react
+npm i -D jest
+Steps to setup test:
+
+1. Install React Testing Library
+2. Install Jest
+3. configure Jest
+npx jest --init
+
+no
+use arrow keys
+jsdom
+reports generate yes
+babel as covergae
+automatically - yes
+
+
+√ Choose the test environment that will be used for testing » jsdom (browser-like)
+√ Do you want Jest to add coverage reports? ... yes
+√ Which provider should be used to instrument code for coverage? » babel
+√ Automatically clear mock calls, instances, contexts and results before every test? ... yes
+
+As of Jest 28 "jest-environment-jsdom" is no longer shipped by default, make sure to install it separately
+
+npm i -D jest-environment-jsdom
+
+Dunder here means “Double Under (Underscores)
+
+SyntaxError: Cannot use import statement outside a module
+
+Help from babel to resolve this error
+
+search - Jest babel config
+Configure babel
+
+npm install --save-dev babel-jest @babel/core @babel/preset-env
+
+
+Configure Babel to target your current version of Node by creating a babel.config.js file in the root of your project:
+
+babel.config.js
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+
+Find difference between Javascript and JSON.
+
+.babelrc
+
+"presets": [["@babel/preset-env", {"targets": {"node": "current"}}]]
+
+npm run test
+
+Install RTL
+install jest
+configure jest
+installed jest-environment-jsdom
+create my first test
+configure babel
+wrote expect sum test
+gitignore coverage report
+
+
+Read about jsdom
+
+
+When we try to render our app on browser is by creating Root and then render tag onto root.
+Now similarly we do while testing, we run test cases on jsdom and not on browser
+render function from @testing-library/react, provide us with jsdom on which we can load any component and test.
+
+Error: Support for the experimental syntax 'jsx' isn't currently enabled (5:27):
+Resolution: To solve this we need to configure a new preset
+
+Error: could not find react-redux context value; please ensure the component is wrapped in a <Provider>
+Resolution: Add provider with store to resolve this error
+
+Error: useHref() may be used only in the context of a <Router> component.
+Resolution: Jest is not able to find the Link tags meaning, To resolve we need to pass staticRouter
+Routing will not work without browser, we need to use staticRouter from 'react-router-dom/server'
+
+Error: ReferenceError: fetch is not defined
+Resolution:
+We need to create a mock function definition of fetch by using jest.fn
+As we use jest.fn when we need to write mock function definition so here you are returning the
+data only so you can directly use mockResolvedValue or mockReturnValue
+
+jest.fn(()=>{Promise.resolve()}); -> This will return us readable stream and not the json, but if we need a json
+we have to write like this:
+jest.fn(()=>{Promise.resolve({json: () => Promise.resolve(data)})});
+As when we receive the data, we will do data.json().
+
+To test the shimmer as toBeInTheDocument we need another library: @testing-library/jest-dom
+npm i -D @testing-library/jest-dom
