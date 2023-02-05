@@ -1,11 +1,11 @@
 const Shimmer = () => {
     return (
         <>
-            <div className="search-container" data-testid={'shimmer'}>
+            <div className="search-container">
                 <input type="text" className="search-input" placeholder="Search" />
                 <button className="search-btn">Search</button>
             </div>
-            <div className="restaurant-list">
+            <div className="restaurant-list" data-testid={'shimmer'}>
                 {Array(12)
                     .fill(0)
                     .map((value, index) => (

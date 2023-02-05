@@ -712,8 +712,8 @@ Different types of testing:
     2. Automation Testing
         -> Selenium Testing
         -> E2E testing - covers entire user Journey
-        -> Unit Testing
-        -> Integration Testing
+        -> Unit Testing, which is to test only 1 component
+        -> Integration Testing, which is to test multiple components together to check one functionality completely
 
 
 Head less browser
@@ -812,3 +812,13 @@ As when we receive the data, we will do data.json().
 
 To test the shimmer as toBeInTheDocument we need another library: @testing-library/jest-dom
 npm i -D @testing-library/jest-dom
+Just to check if the component is loaded into memory then we can use toBeInTheDocument.
+But it's not a good way to use it.
+
+To wait for data to be load we can use await waitFor(()=>expect(condition)) is fulfilled.
+waitFor is imported by @testing-library/react.
+
+To fire an event we have to use fireEvent object which has all the events, this is provided by @testing-library/react
+using fireEvent we can call change with first argument as the name of tag on which we will fire event,
+and to pass the synthetic event's value we need to pass the second argument as object with target object containing value
+with our input value.

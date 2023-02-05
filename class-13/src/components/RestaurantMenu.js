@@ -29,7 +29,7 @@ const RestaurantMenu = () => {
             </div>
             <div className="menu-items m-8 p-10">
                 <h1>Menu</h1>
-                <ul>
+                <ul data-testid="menu-items">
                     {Object.values(restaurant?.menu?.items ? restaurant.menu.items : {}).map((item) => {
                         return (
                             <li key={item?.id} className={'flex content-between'}>

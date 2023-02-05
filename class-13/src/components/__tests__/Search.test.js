@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { fireEvent, render, waitFor } from '@testing-library/react';
+import { act, fireEvent, render, waitFor } from '@testing-library/react';
 import Body from '../Body';
 import { StaticRouter } from 'react-router-dom/server';
 import { Provider } from 'react-redux';
@@ -21,9 +21,11 @@ test('Shimmer should load on HomePage', () => {
     );
     // console.log(body);
     const shimmer = body.getByTestId('shimmer');
-    expect(shimmer).toBeInTheDocument();
+    // expect(shimmer).toBeInTheDocument();
+    expect(shimmer.children.length).toBe(12);
 });
-test('search for string (food) on Homepage', async () => {
+
+test('Restaurants should load on HomePage', async () => {
     const body = render(
         <StaticRouter>
             <Provider store={store}>
@@ -32,14 +34,36 @@ test('search for string (food) on Homepage', async () => {
         </StaticRouter>,
     );
     await waitFor(() => expect(body.getByTestId('search-btn')));
+
+    // console.log(body);
+    const restList = body.getByTestId('rest-list');
+    // expect(shimmer).toBeInTheDocument();
+    expect(restList.children.length).toBe(15);
+});
+test('search for string (food) on Homepage', async () => {
+    let body;
+    await act(() => {
+        body = render(
+            <StaticRouter>
+                <Provider store={store}>
+                    <Body />
+                </Provider>
+            </StaticRouter>,
+        );
+    });
+    await waitFor(() => expect(body.getByTestId('search-btn')));
     const input = body.getByTestId('search-input');
-    fireEvent.change(input, {
-        target: { value: 'food' },
+    await act(() => {
+        fireEvent.change(input, {
+            target: { value: 'food' },
+        });
     });
     const searchBtn = body.getByTestId('search-btn');
-    fireEvent.click(searchBtn);
+    await act(() => {
+        fireEvent.click(searchBtn);
+    });
 
-    const resList = body.getByTestId('res-list-djd');
+    const restList = body.getByTestId('rest-list');
 
-    expect(resList.children).toBe(15);
+    expect(restList.children.length).toBe(1);
 });
