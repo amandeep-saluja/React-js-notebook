@@ -1,8 +1,10 @@
-import { act, render } from '@testing-library/react';
+import { act, render, waitFor, fireEvent } from '@testing-library/react';
+import Header from '../Header';
 import RestaurantMenu from '../RestaurantMenu';
 import { RESTAURANT_MENU } from '../mocks/data';
 import { Provider } from 'react-redux';
 import store from '../../store/store';
+import { StaticRouter } from 'react-router-dom/server';
 
 global.fetch = jest.fn(() =>
     Promise.resolve({
@@ -14,11 +16,21 @@ test('Add items to cart', async () => {
     let menu;
     await act(() => {
         menu = render(
-            <Provider store={store}>
-                <RestaurantMenu />
-            </Provider>,
+            <StaticRouter>
+                <Provider store={store}>
+                    <Header />
+                    <RestaurantMenu />
+                </Provider>
+            </StaticRouter>,
         );
     });
-    const menuItems = menu.getByTestId('menu-items');
-    console.log(menuItems);
+    await waitFor(() => expect(menu.getAllByTestId('addBtn')));
+
+    const addButton = menu.getAllByTestId('addBtn');
+
+    fireEvent.click(addButton[0]);
+    fireEvent.click(addButton[1]);
+
+    const cart = menu.getByTestId('cart');
+    expect(cart.innerHTML).toBe('Cart 2 items');
 });

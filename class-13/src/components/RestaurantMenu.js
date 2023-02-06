@@ -34,7 +34,11 @@ const RestaurantMenu = () => {
                         return (
                             <li key={item?.id} className={'flex content-between'}>
                                 {item?.name}
-                                <button className={'bg-green-500 p-2 m-2'} onClick={() => addFoodItem(item)}>
+                                <button
+                                    data-testid="addBtn"
+                                    className={'bg-green-500 p-2 m-2'}
+                                    onClick={() => addFoodItem(item)}
+                                >
                                     Add Item
                                 </button>
                             </li>
