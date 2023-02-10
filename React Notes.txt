@@ -1,6 +1,93 @@
+Namaste React
+------------------------------------------------------------------------------------------------------------------
+Class 1: Inception - Namaste React LIVE
+
 React is a javascript library and not a framework.
------------------------------------------------------
-React class-2:
+
+Use CDN Link of react library to use it our code.
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+React Library has a method createElement which takes in 3 arguments
+    1. tag name
+    2. props - object of parameters passed to the tag
+    3. child of tag
+
+Like:
+    const header = React.createElement(
+      "h1",
+      {
+        className: "title",
+        key: "h1",
+      },
+      "Hello world"
+    );
+
+To render this created React Element, we need to pass the element to render function.
+This render function will be provided by createRoot() function, which takes in HTML element on which we need to render
+the React element. We need to use ReactDOM library to use this function, then this function will return us a root
+object attached to the app id in the HTML. Using root when we call a render function with react element as args,
+that React element will be rendered on DOM.
+
+const root = ReactDOM.createRoot(document.getElementById("app"));
+root.render(header);
+
+Async vs defer:
+If we want to use a script which is dependent on other scripts then using async will not garrentte us that
+scripts will be loaded in sequence and that may break our code. we should use defer in this case.
+
+When we want to load external scripts like Google Analytics, which are modular and independent of our code
+ then we should use async, instead of defer. Otherwise, it is wise to use defer.
+
+CORS(Cross Origin)
+-> Resource sharing between same origin apps is very easy.
+-> Browser does not allow https://akshaysaini.in this domain to communicate with following domains:
+    -> google.com/api/getdata
+    -> api.akshaysaini.in
+    -> akshaysaini.in:5050
+    -> http://akshaysaini.in
+
+Preflight Request:
+-> AKA Options calls
+-> AKA CORS Preflight Request
+-> Before any actual Get or Post call is made by browser to server, browser sends a preflight request,
+-> This request is basically used to check whether this request is safe or not.
+-> When browser make preflight request to server, server then takes the responsibility whether this call
+    is valid or not, and if it's safe then server will add some additional HTTP Headers to response,
+    which will let the client/browser know that this call is safe. Then only the actual call will be made to the server.
+-> It also checks whether server allows request method (get, post, update, delete), allows request headers
+    and origin header. Example:
+
+    OPTIONS /resource/foo
+    Access-Control-Request-Method: DELETE
+    Access-Control-Request-Headers: origin, x-requested-with
+    Origin: https://foo.bar.org
+
+    If server allows DELETE with provided headers and origin, then it return below response:
+
+    HTTP/1.1 204 No Content
+    Connection: keep-alive
+    Access-Control-Allow-Origin: https://foo.bar.org
+    Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE
+    Access-Control-Max-Age: 86400
+
+-> This is how resources are shared between different origins.
+-> Will this happens for each request?
+    No, there are two types of Access Control Mechanism
+        1. Simple Request
+        2. Preflight Request
+-> Some request browser automatically tag them as Simple Request but some of the follow Preflight request based on
+    some criteria.
+
+CSRF
+-> Cross Site Request Forgery
+-> CSRF is an attack that impersonates a trusted user and sends a website unwanted commands.
+    ex: <img src="https://www.example.com/index.php?action=delete&id=123" />
+
+
+-----------------------------------------------------------------------------------------------------------------
+Class-2: Igniting our App
 
 How to add react into our app:
 
@@ -45,10 +132,82 @@ How to ignite our app
 npx parcel index.html
 
 --------------------------------------------------------------------------------------
-React class-3
-
+Class-3 : Laying the Foundation
 
 JSX
+    •	It is neither a string nor HTML.
+    •	It is a html-based syntax extension to JavaScript.
+    •	JSX produces React “elements”
+    •	Instead of artificially separating technologies by putting markup and logic in separate files, React separates
+        concerns with loosely coupled units called “components” that contain both.
+    •	After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.
+    •	use quotes to specify string literals as attributes
+    •	use curly braces to embed a JavaScript expression in an attribute
+    •	Babel compiles JSX down to React.createElement() calls and JSX represents Objects.
+        These objects are called “React elements”
+React.createElement vs JSX
+    •	JSX is not a requirement for using React. Using React without JSX is especially convenient when you don’t want
+        to set up compilation in your build environment.
+Behind the Scenes of JSX
+    •	The process through which React updates the DOM is known as Reconciliation.
+        This reconciliation has 2 phases :
+            1.	Render Phase
+            2.	Commit Phase
+    •	The Render phase takes your JSX and turns it into a javascript representation.
+        This is nothing but the VirtualDOM.
+    •	The commit phase is actually taking that representation and applying it to the real DOM.
+        React does batch updates.
+    •	Reconciliation = Render + Diffing occurs in between + Commit.
+
+Babel & parcel role in JSX
+    Bundler
+        A bundler lets you write modular code and bundle it together into small packages to optimise load time.
+        Webpack, Parcel.js, Browerify, FuseBox, Rollup, Vite.js
+    Compiler
+        A compiler lets you write modern JavaScript code that still works in older browsers.
+        There’s only one choice here, and that is Babel. Babel transforms your modern JavaScript code into a form that
+        is compatible with “older” browsers. Fortunately, Parcel comes built-in with a default Babel configuration
+        that uses the babel-env and browserslist.
+
+        https://levelup.gitconnected.com/creating-a-react-app-from-scratch-with-parcel-a35da9b36086
+
+React Components
+    Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return
+    React elements describing what should appear on the screen.
+
+    Props => React Component => React Element/Object
+
+    1. Functional Components
+    2. Composing Components
+
+Role of type attribute in script tag? What options can I use there?
+    Crossorigin
+        Normal script elements pass minimal information to the window.onerror for scripts which do not pass the standard
+         CORS checks. To allow error logging for sites which use a separate domain for static media, use this attribute.
+    Defer
+        This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the
+        document has been parsed, but before firing DOMContentLoaded.
+    Type
+        This attribute indicates the type of script represented.
+        The value of this attribute will be one of the following:
+
+        -> Module
+            This value causes the code to be treated as a JavaScript module. The processing of the script contents is
+            deferred. The charset and defer attributes have no effect. For information on using module, see our
+            JavaScript modules guide. Unlike classic scripts, module scripts require the use of the CORS protocol for
+            cross-origin fetching.
+        -> Importmap
+        This value indicates that the body of the element contains an import map. The import map is a JSON object that
+        developers can use to control how the browser resolves module specifiers when importing JavaScript modules.
+        Attribute is not set (default), an empty string, or a JavaScript MIME type
+    Integrity
+        This attribute contains inline metadata that a user agent can use to verify that a fetched resource has been
+        delivered free of unexpected manipulation
+    Async
+        For classic scripts, if the async attribute is present, then the classic script will be fetched in parallel
+        to parsing and evaluated as soon as it is available. For module scripts, if the async attribute is present
+        then the scripts and all their dependencies will be executed in the defer queue, therefore they will get
+        fetched in parallel to parsing and evaluated as soon as they are available.
 
 Babel
 
@@ -68,7 +227,7 @@ Note:
 		);
 
 -----------------------------------------------------------------------------------
-class-4
+Class-4: Talk is Cheap, show me the code
 
 For breaking code into components and use it again we have to use something knows as import and export keywords.
 Exporting from module:
@@ -129,7 +288,7 @@ same as
 React uses one way data binding only
 
 --------------------------------------------------------------------------------------------
-class-5/class-6
+class-5/class-6 : Let's get Hooked!
 State variable or React hook
 
 	react creates Virtual dom and to know react that something will change on an event, we attach a hook between data and virtual dom's element.
@@ -380,7 +539,7 @@ Why to use super in constructor?
 Why can I make componentDidMount async and not useEffect async?
 
 -------------------------------------------------------------------------
-class-9 -
+class-9 - Optimizing our App
 
 How many times componentDidMount gets called? -> once
 
