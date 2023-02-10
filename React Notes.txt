@@ -761,10 +761,10 @@ How to modify the default value of context after making API call?
 -> you can give name to  context name by
     UserContext.displayName = "UserContext"
     so that React tools can track the component name.
--> Context is so powerful that, If we update the context from one place, it will get reflected in the lazy loaded component.
-    At the time of lazy component loading the update context value is provided to it.
--> Data Layer and UI Layer works independently and Data Layer manages all the data, it stays as is, and UI Layer updates
-    the UI Layer and do all the reconciliation, making and rendering of the components -> Virtual DOM.
+-> Context is so powerful that, If we update the context from one place, it will get reflected in the
+    lazy loaded component. At the time of lazy component loading the update context value is provided to it.
+-> Data Layer and UI Layer works independently and Data Layer manages all the data, it stays as is, and UI Layer
+    updates the UI Layer and do all the reconciliation, making and rendering of the components -> Virtual DOM.
 
 H.W.
 ->Multiple context
@@ -807,14 +807,16 @@ Cons:
     reducer function, which modifies our slice of redux store.
 
 WRITE CYCLE:
--> When we click on the + Button, it dispatches an action which calls the reducer function which updates the slice of our redux store.
+-> When we click on the + Button, it dispatches an action which calls the reducer function which updates
+    the slice of our redux store.
 
 READ CYCLE:
 -> when we have to read slice of our store, we call the SELECTOR, and it will update my CART.
 
 Selector:
 -> Its a React hook, which selects the slice from out store and return.
--> cart component has subscribed to the store. When cart slice in the store, it will be automatically modify in the cart UI.
+-> cart component has subscribed to the store. When cart slice in the store,
+    it will be automatically modify in the cart UI.
 
 We need a new library:
 
@@ -984,5 +986,5 @@ waitFor is imported by @testing-library/react.
 
 To fire an event we have to use fireEvent object which has all the events, this is provided by @testing-library/react
 using fireEvent we can call change with first argument as the name of tag on which we will fire event,
-and to pass the synthetic event's value we need to pass the second argument as object with target object containing value
-with our input value.
+and to pass the synthetic event's value we need to pass the second argument as object with target object containing
+value with our input value.
