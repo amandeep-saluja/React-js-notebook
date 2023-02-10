@@ -33,6 +33,35 @@ that React element will be rendered on DOM.
 const root = ReactDOM.createRoot(document.getElementById("app"));
 root.render(header);
 
+Role of type attribute in script tag? What options can I use there?
+    Crossorigin
+        Normal script elements pass minimal information to the window.onerror for scripts which do not pass the standard
+         CORS checks. To allow error logging for sites which use a separate domain for static media, use this attribute.
+    Defer
+        This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the
+        document has been parsed, but before firing DOMContentLoaded.
+    Type
+        This attribute indicates the type of script represented.
+        The value of this attribute will be one of the following:
+
+        -> Module
+            This value causes the code to be treated as a JavaScript module. The processing of the script contents is
+            deferred. The charset and defer attributes have no effect. For information on using module, see our
+            JavaScript modules guide. Unlike classic scripts, module scripts require the use of the CORS protocol for
+            cross-origin fetching.
+        -> Importmap
+        This value indicates that the body of the element contains an import map. The import map is a JSON object that
+        developers can use to control how the browser resolves module specifiers when importing JavaScript modules.
+        Attribute is not set (default), an empty string, or a JavaScript MIME type
+    Integrity
+        This attribute contains inline metadata that a user agent can use to verify that a fetched resource has been
+        delivered free of unexpected manipulation
+    Async
+        For classic scripts, if the async attribute is present, then the classic script will be fetched in parallel
+        to parsing and evaluated as soon as it is available. For module scripts, if the async attribute is present
+        then the scripts and all their dependencies will be executed in the defer queue, therefore they will get
+        fetched in parallel to parsing and evaluated as soon as they are available.
+
 Async vs defer:
 If we want to use a script which is dependent on other scripts then using async will not garrentte us that
 scripts will be loaded in sequence and that may break our code. we should use defer in this case.
@@ -84,7 +113,6 @@ CSRF
 -> Cross Site Request Forgery
 -> CSRF is an attack that impersonates a trusted user and sends a website unwanted commands.
     ex: <img src="https://www.example.com/index.php?action=delete&id=123" />
-
 
 -----------------------------------------------------------------------------------------------------------------
 Class-2: Igniting our App
@@ -180,35 +208,6 @@ React Components
     1. Functional Components
     2. Composing Components
 
-Role of type attribute in script tag? What options can I use there?
-    Crossorigin
-        Normal script elements pass minimal information to the window.onerror for scripts which do not pass the standard
-         CORS checks. To allow error logging for sites which use a separate domain for static media, use this attribute.
-    Defer
-        This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the
-        document has been parsed, but before firing DOMContentLoaded.
-    Type
-        This attribute indicates the type of script represented.
-        The value of this attribute will be one of the following:
-
-        -> Module
-            This value causes the code to be treated as a JavaScript module. The processing of the script contents is
-            deferred. The charset and defer attributes have no effect. For information on using module, see our
-            JavaScript modules guide. Unlike classic scripts, module scripts require the use of the CORS protocol for
-            cross-origin fetching.
-        -> Importmap
-        This value indicates that the body of the element contains an import map. The import map is a JSON object that
-        developers can use to control how the browser resolves module specifiers when importing JavaScript modules.
-        Attribute is not set (default), an empty string, or a JavaScript MIME type
-    Integrity
-        This attribute contains inline metadata that a user agent can use to verify that a fetched resource has been
-        delivered free of unexpected manipulation
-    Async
-        For classic scripts, if the async attribute is present, then the classic script will be fetched in parallel
-        to parsing and evaluated as soon as it is available. For module scripts, if the async attribute is present
-        then the scripts and all their dependencies will be executed in the defer queue, therefore they will get
-        fetched in parallel to parsing and evaluated as soon as they are available.
-
 Babel
 
 	React.createElement => React object => HTML(DOM)
@@ -291,18 +290,20 @@ React uses one way data binding only
 class-5/class-6 : Let's get Hooked!
 State variable or React hook
 
-	react creates Virtual dom and to know react that something will change on an event, we attach a hook between data and virtual dom's element.
-	So whenever there is an event triggered, react re-render that part of virtual dom or sub-tree that has used state variable...
+	React creates Virtual dom and to know React that something will change on an event, we attach a hook
+	between data and virtual dom's element. So whenever there is an event triggered, React re-render that
+	part of virtual dom or subtree that has used state variable.
 	
 	React Fiber -> new reconciliation algorithm
 
-	while reconciliation react used diff algorithm to check difference between the virtual DOM's previous state and current state.
+	while reconciliation react used diff algorithm to check difference between the virtual DOM's
+	previous state and current state.
 
 	React only watch it's state variables and re-render it in virtual dom.
 	
-useEffect is a react hook that calls when component is rendered.
+useEffect is a React hook that calls when component is rendered.
 	
-useEffect callback function takes a call back funtion & dependency array...
+useEffect callback function takes a call back function & dependency array.
 and call it at a specific time.
 
 after every rerender useEffect gets called and hence it's callback will be called
@@ -310,11 +311,12 @@ after every rerender useEffect gets called and hence it's callback will be calle
 useEffect calls when:
 	
 	-> empty dependency array -> once after first render
-	-> dep arrat [searchTxt] => once after initial render + everytime after render ( my searchTxt changes)
+	-> dep array [searchTxt] => once after initial render + everytime after render ( my searchTxt changes)
 	-> if we don't pass any dependency -> it will be called after every render.
 	
 Never create any component inside component.
-Never ever write a useState() inside if else. -> react wont like inconsistency. -> react won;t know if searchTxt variable will be there or not.
+Never ever write a useState() inside if else. -> react wont like inconsistency. -> react won't know
+    if searchTxt variable will be there or not.
 Never write a useState inside for loop.
 
 
@@ -370,7 +372,8 @@ that requires array of objects as routing configuration or paths.
 -> To create clickable links in page instead of anchor tag that reloads the whole page, react-router-dom package
     have provided us Link component, which is a named exported component, that takes to="/" path, and
      internally converts it to anchor tag (because in the end everything has to be converted into something that
-     browser understand) and keeps a track of it, so that whenever it is clicked, Link will navigate to corresponding page.
+     browser understand) and keeps a track of it, so that whenever it is clicked,
+     Link will navigate to corresponding page.
 
 -> To route the nested paths and load the components specified inside children in a specific place, react-router-dom
     provided us an Outlet component (Named exported component), using which we can navigate to desired
@@ -475,7 +478,8 @@ Lifecycle of React class component
 	1. Render phase
 		-> calls constructor
 		-> calls render -> create virtual DOM and ready to put everything on browser
-						-> react batches up everything into one, (that's why if two child component's constructor is called just after render of first child)
+						-> react batches up everything into one, (that's why if two child component's
+						    constructor is called just after render of first child)
 	2. Commit phase
 		-> React updates DOM & refs
 		-> componentDidMount calls
@@ -683,7 +687,8 @@ then React converts it into big object, which is known as Virtual Document Objec
 This V-DOM is used for Reconciliation, which calculates Diff. Diff is between current V-DOM and
 previous V-DOM, then this diff is sync with actual DOM in browser.
 
-JSX -> React object -> vDOM -> Reconciliation (diff between current vDOM and previous copy of vDOM) -> diff is sync with Real DOM
+JSX -> React object -> vDOM -> Reconciliation (diff between current vDOM and previous copy of vDOM) -> diff is sync
+                                                                                                        with Real DOM
 
 Data is maintained & managed in the Data Layer in UI using
 -> state
@@ -730,8 +735,8 @@ Various ways to create central state management:
     6. Flux
     7. Redux
 
-->We can create a global variable, but it won't work as React is not tracking it. Whenever the value of the variable change
-    It will not reflect on DOM.
+->We can create a global variable, but it won't work as React is not tracking it.
+    Whenever the value of the variable change. It will not reflect on DOM.
 
 React Context
 How to pass the data from children to parent?
